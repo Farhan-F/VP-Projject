@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8AD8AB31-5704-4092-BE84-DE59D2DFE1D8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Real_Estate_Software</RootNamespace>
+    <AssemblyName>Real Estate Software</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add Property.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Property.Designer.cs">
+      <DependentUpon>Add Property.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlertBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlertBox.Designer.cs">
+      <DependentUpon>AlertBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="alertBox_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alertBox_Update.Designer.cs">
+      <DependentUpon>alertBox_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deleting Record.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modify Tenant Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modify Tenant Info.Designer.cs">
+      <DependentUpon>Modify Tenant Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Remove Property.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remove Property.Designer.cs">
+      <DependentUpon>Remove Property.cs</DependentUpon>
+    </Compile>
+    <Compile Include="remove tenant alert box.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="remove tenant alert box.Designer.cs">
+      <DependentUpon>remove tenant alert box.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Remove Tenant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remove Tenant.Designer.cs">
+      <DependentUpon>Remove Tenant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rent Property.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rent Property.Designer.cs">
+      <DependentUpon>Rent Property.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RentProperty2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RentProperty2.Designer.cs">
+      <DependentUpon>RentProperty2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="show All for load.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="show All for load.Designer.cs">
+      <DependentUpon>show All for load.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Show All.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Show All.Designer.cs">
+      <DependentUpon>Show All.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Show Rented Properties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Show Rented Properties.Designer.cs">
+      <DependentUpon>Show Rented Properties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="update alert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update alert.Designer.cs">
+      <DependentUpon>update alert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update Record.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update Record.Designer.cs">
+      <DependentUpon>Update Record.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add Property.resx">
+      <DependentUpon>Add Property.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlertBox.resx">
+      <DependentUpon>AlertBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alertBox_Update.resx">
+      <DependentUpon>alertBox_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modify Tenant Info.resx">
+      <DependentUpon>Modify Tenant Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Remove Property.resx">
+      <DependentUpon>Remove Property.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="remove tenant alert box.resx">
+      <DependentUpon>remove tenant alert box.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remove Tenant.resx">
+      <DependentUpon>Remove Tenant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rent Property.resx">
+      <DependentUpon>Rent Property.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RentProperty2.resx">
+      <DependentUpon>RentProperty2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="show All for load.resx">
+      <DependentUpon>show All for load.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Show All.resx">
+      <DependentUpon>Show All.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Show Rented Properties.resx">
+      <DependentUpon>Show Rented Properties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update alert.resx">
+      <DependentUpon>update alert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update Record.resx">
+      <DependentUpon>Update Record.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\Add_Property.datasource" />
+    <None Include="Properties\DataSources\Deleting_Record.datasource" />
+    <None Include="Properties\DataSources\Main_Menu.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\Real_Estate_Software.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\Real_Estate_Software.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\Rent_Property.datasource" />
+    <None Include="Properties\DataSources\Show_All.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
